@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecionando...</title>
+</head>
+<body>
+
+<script>
+  // ==== CONFIGURE AQUI ====
+  const linkDesktop = "https://ateliejumoreira.my.canva.site/cat-logo-destop";
+  const linkMobile   = "https://ateliejumoreira.my.canva.site/";
+
+  // Detecta se é mobile pelo tipo de dispositivo (mais confiável que largura de tela)
+  const ehMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+
+  window.location.href = ehMobile ? linkMobile : linkDesktop;
+</script>
+
+<noscript>
+  <p>Este link precisa de JavaScript habilitado para redirecionar automaticamente.</p>
+  <p><a href="https://exemplo.com/versao-desktop">Clique aqui para acessar o site</a></p>
+</noscript>
+
+</body>
+</html>
